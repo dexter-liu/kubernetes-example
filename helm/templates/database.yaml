@@ -26,6 +26,8 @@ spec:
       labels:
         app: database
     spec:
+      imagePullSecrets:
+      - name: my-secret
       containers:
       - name: postgres
         image: postgres
