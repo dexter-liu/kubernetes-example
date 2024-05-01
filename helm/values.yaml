@@ -1,11 +1,11 @@
 frontend:
   image: dexterliu3/frontend
-  tag: '1276e23'
+  tag: 216c7f9
   autoscaling:
     averageUtilization: 90
 backend:
   image: dexterliu3/backend
-  tag: '1276e23'
+  tag: 216c7f9
   autoscaling:
     averageUtilization: 90
 database:
@@ -13,4 +13,3 @@ database:
   uri: pg-service
   username: postgres
   password: postgres
-  
