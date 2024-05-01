@@ -14,6 +14,8 @@ spec:
       labels:
         app: frontend
     spec:
+      imagePullSecrets: 
+      - name: my-secret
       containers:
       - name: react-frontend
         image: lyzhang1999/frontend:latest
@@ -22,10 +24,10 @@ spec:
         - containerPort: 3000
         resources:
           requests:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "128m"
           limits:
-            memory: "256Mi"
+            memory: "512Mi"
             cpu: "256m"
 ---
 apiVersion: v1

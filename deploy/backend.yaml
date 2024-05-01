@@ -14,6 +14,8 @@ spec:
       labels:
         app: backend
     spec:
+      imagePullSecrets: 
+      - name: my-secret
       containers:
       - name: flask-backend
         image: lyzhang1999/backend:latest
@@ -29,10 +31,10 @@ spec:
           value: postgres
         resources:
           requests:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "128m"
           limits:
-            memory: "256Mi"
+            memory: "512Mi"
             cpu: "256m"
         readinessProbe: 
           httpGet:
