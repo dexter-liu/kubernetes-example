@@ -1,11 +1,11 @@
 frontend:
   image: dexterliu3/frontend
-  tag: 216c7f9
+  tag: f7588b5
   autoscaling:
     averageUtilization: 90
 backend:
   image: dexterliu3/backend
-  tag: 216c7f9
+  tag: f7588b5
   autoscaling:
     averageUtilization: 90
 database:
